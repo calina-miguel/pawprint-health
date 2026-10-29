@@ -12,3 +12,25 @@
 .paw-page{font-family:'Trebuchet MS',Arial,sans-serif;line-height:1.55}
 .paw-page :is(h1,h2,h3){font-family:'Trebuchet MS',Arial,sans-serif;font-weight:700;letter-spacing:-.035em;line-height:1.02}
 .paw-page :is(.paw-kicker,.paw-nav-note,.paw-footer){font-family:'Segoe UI',Arial,sans-serif;letter-spacing:.12em}
+
+/* Pawprint reads like a calm care record, led by a pet portrait and longitudinal notes. */
+.paw-hero{grid-template-columns:1fr;gap:24px;padding-block:62px 52px}
+.paw-copy{display:grid;grid-template-columns:1fr 1fr;align-items:end;column-gap:36px}
+.paw-copy .paw-kicker{grid-column:1/-1}
+.paw-copy h1{grid-column:1;margin:20px 0 10px}
+.paw-lede{grid-column:2;grid-row:2;max-width:400px;margin:0 0 18px}
+.paw-button{grid-column:2;grid-row:3;justify-self:start;margin-top:0}
+.paw-aside{grid-column:1;grid-row:3;margin-top:0}
+.paw-scene{min-height:480px;border-radius:180px 180px 12px 12px;overflow:hidden}
+.paw-care{grid-template-columns:1fr;gap:35px;padding-block:112px 120px}
+.paw-care-intro{display:grid;grid-template-columns:1fr 1fr;align-items:end;column-gap:30px}
+.paw-care-intro .paw-kicker{grid-column:1/-1}
+.paw-care-intro h2{margin:18px 0 0}
+.paw-care-intro>p:last-of-type{justify-self:end;max-width:340px;margin:0 0 10px}
+.paw-progress{grid-column:1/-1;margin-top:24px}
+.paw-timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:0;padding:30px 0;border-top:1px solid #d8cbdc;border-bottom:1px solid #d8cbdc}
+.paw-timeline::before{display:none}
+.paw-step{grid-template-columns:1fr;gap:18px;min-height:210px;padding:20px 28px;border-right:1px solid #d8cbdc}
+.paw-step:last-child{border:0}.paw-step-node{width:48px;height:48px}
+.paw-step-arrow{justify-self:end}
+@media(max-width:800px){.paw-copy{grid-template-columns:1fr}.paw-copy .paw-kicker{grid-column:auto}.paw-copy h1,.paw-lede,.paw-button,.paw-aside{grid-column:auto;grid-row:auto}.paw-lede{margin:0}.paw-aside{margin-top:15px}.paw-scene{min-height:400px;border-radius:130px 130px 10px 10px}.paw-care-intro{grid-template-columns:1fr}.paw-care-intro .paw-kicker{grid-column:auto}.paw-care-intro>p:last-of-type{justify-self:start;margin-top:14px}.paw-progress{grid-column:auto}.paw-timeline{grid-template-columns:1fr}.paw-step{min-height:0;padding:22px 12px;border-right:0;border-bottom:1px solid #d8cbdc}.paw-step:last-child{border-bottom:0}}
